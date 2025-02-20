@@ -45,7 +45,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/allreviews"
+          to="/taskBoard"
           className={({ isActive }) =>
             isActive
               ? "text-[#00ADB5] font-semibold underline"
@@ -58,7 +58,7 @@ const Navbar = () => {
     
           <li>
             <NavLink
-              to="/addreview"
+              to="/dashboard"
               className={({ isActive }) =>
                 isActive
               ? "text-[#00ADB5] font-semibold underline"
