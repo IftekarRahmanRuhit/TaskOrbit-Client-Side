@@ -1,9 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Pages/Home/Home";
-import TaskBoard from "../Pages/TaskBoard/TaskBoard";
+
 import Login from "../Pages/Authentication/Login";
 import Register from "../Pages/Authentication/Register";
+import AddTask from "../Pages/AddTask/AddTask";
+import TaskManagement from "../TaskManagement/TaskManagement";
 
 
 export const routes = createBrowserRouter([
@@ -17,8 +19,13 @@ export const routes = createBrowserRouter([
            
         },
         {
-            path:'/taskBoard',
-            element: <TaskBoard></TaskBoard>,
+            path:'/addTask',
+            element:<AddTask></AddTask>,
+           
+        },
+        {
+            path:'/allTask',
+            element: <TaskManagement></TaskManagement>,
            
         },
  
