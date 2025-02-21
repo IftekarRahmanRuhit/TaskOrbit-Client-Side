@@ -109,7 +109,7 @@ const Login = () => {
                         placeholder="Enter your email"
                         
                         ref={emailRef}
-                        className="w-full px-4 py-3 rounded-lg bg-[#1B1D21]  text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#38A1DB] focus:border-transparent transition duration-200"
+                        className="w-full px-4 py-3 rounded-lg bg-[#1B1D21]  text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#38A1DB] focus:border-transparent transition duration-200 border border-gray-700"
                         required
                       />
                     </div>
@@ -127,7 +127,7 @@ const Login = () => {
                           name="password"
                           placeholder="Enter your password"
                           
-                          className="w-full px-4 py-3 rounded-lg bg-[#1B1D21]  text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#38A1DB] focus:border-transparent transition duration-200"
+                          className="w-full px-4 py-3 rounded-lg bg-[#1B1D21]  text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#38A1DB] focus:border-transparent transition duration-200 border border-gray-700"
                           required
                         />
                         <button

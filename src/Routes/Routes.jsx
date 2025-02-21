@@ -6,6 +6,7 @@ import Login from "../Pages/Authentication/Login";
 import Register from "../Pages/Authentication/Register";
 import AddTask from "../Pages/AddTask/AddTask";
 import TaskManagement from "../TaskManagement/TaskManagement";
+import PrivateRoute from "./PrivateRoute";
 
 
 export const routes = createBrowserRouter([
@@ -20,12 +21,12 @@ export const routes = createBrowserRouter([
         },
         {
             path:'/addTask',
-            element:<AddTask></AddTask>,
+            element:<PrivateRoute><AddTask></AddTask></PrivateRoute>,
            
         },
         {
             path:'/allTask',
-            element: <TaskManagement></TaskManagement>,
+            element: <PrivateRoute><TaskManagement></TaskManagement></PrivateRoute>,
            
         },
  
