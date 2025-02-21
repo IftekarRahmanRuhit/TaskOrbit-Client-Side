@@ -94,13 +94,13 @@ const MainLayout = () => {
     }
 
     return (
-        <div>
+        <div className='max-w-screen-2xl mx-auto '>
             <div>
                 <Toaster
                     toastOptions={{
                         success: {
                             style: {
-                                background: "#008C8C",
+                                background: "#38A1DB",
                                 color: "white",
                             },
                         },
@@ -113,7 +113,7 @@ const MainLayout = () => {
                 />
                 <Navbar />
             </div>
-            <div className="">
+            <div className="relative md:-bottom-2"> 
                 <Outlet />
             </div>
         </div>
