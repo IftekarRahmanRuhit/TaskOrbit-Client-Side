@@ -5,8 +5,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { LuLogIn } from "react-icons/lu";
 import Swal from "sweetalert2";
-import { MdDarkMode } from "react-icons/md";
-import { IoMdSunny } from "react-icons/io";
+
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
