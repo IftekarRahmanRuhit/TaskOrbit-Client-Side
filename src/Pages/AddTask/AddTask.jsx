@@ -3,12 +3,14 @@ import { useContext, useState } from "react";
 import toast from "react-hot-toast";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const AddTask = () => {
   const axiosPublic = useAxiosPublic();
   const { user } = useContext(AuthContext);
   const [loading, setLoading] = useState(false);
   const [charCount, setCharCount] = useState({ title: 0, description: 0 });
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,6 +38,8 @@ const AddTask = () => {
         toast.success("Task added successfully!");
         form.reset();
         setCharCount({ title: 0, description: 0 });
+        navigate("/allTask");
+
       }
     } catch (error) {
       toast.error(error.message || "Failed to add task");

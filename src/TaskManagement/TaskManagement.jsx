@@ -68,7 +68,7 @@ const Container = ({ title, tasks, onEdit, onDelete }) => {
       {tasks.length === 0 ? (
         <div className="text-center text-gray-400">
           <p>No tasks here</p>
-          <Link to="/addTask" className="inline-block mt-4 px-6 py-2 bg-[#38A1DB] text-white rounded-lg hover:bg-[#2C80AF] transition-colors">
+          <Link to="/addTask" className="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-[#294C5F] to-[#212428] text-white hover:from-[#212428] hover:to-[#294C5F] border border-[#38A1DB] rounded-lg hover:bg-[#2C80AF] transition-colors">
             Add Task
           </Link>
         </div>
